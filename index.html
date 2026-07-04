@@ -17,14 +17,35 @@
     <input type="button" value="click me" id="btn" placeholder="click me" onclick="changeHeading()"> -->
 
 
-    <input type="text" id="textInput1" placeholder="Enter text here">
+    <!-- <input type="text" id="textInput1" placeholder="Enter text here">
     <input type="text" id="textInput2" placeholder="Enter text here">
 
     <h1 id="output">output</h1>
 
     <input type="button" value="+" onclick="sum()" id="sum">
-    <input type="button" value="-" onclick="mines()" id="mines">
+    <input type="button" value="-" onclick="mines()" id="mines"> -->
 
+    <h1>Customer Manager</h1>
+
+    <input type="text" placeholder="name" id="txtName">
+    <input type="text" placeholder="address" id="txtAddress">
+    <input type="text" placeholder="age" id="txtage">
+    <input type="text" placeholder="email" id="txtEmail">
+    <input type="text" placeholder="salary" id="txtSalary">
+
+      <input type="button" value="Add Customer" onclick="btnAddCustomerOnAction()">
+
+      <table border="1" id="tblCustomers">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Age</td>
+            <td>Email</td>
+            <td>Salary</td>
+        </tr>
+      </table>
+
+      <input type="button" value="load table" oneclick="loadTable()">
 
     <script src="/js/app.js"></script>
 </body>
