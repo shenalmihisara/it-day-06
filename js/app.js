@@ -98,19 +98,55 @@ console.log(customer2.items[0].variants[1]);*/
 //     heading.innerText = textInput.value;
 // }
 
-function sum(){
-    let number1 = document.getElementById("textInput1")
-    let number2 = document.getElementById("textInput2")
-    let sum = (parseInt(number1.value) + parseInt(number2.value));
-    output.innerText = sum   
+// function sum(){
+//     let number1 = document.getElementById("textInput1")
+//     let number2 = document.getElementById("textInput2")
+//     let sum = (parseInt(number1.value) + parseInt(number2.value));
+//     output.innerText = sum   
+// }
+
+// function mines(){
+//     let number1 = document.getElementById("textInput1")
+//     let number2 = document.getElementById("textInput2")
+//     let minus = (parseInt(number1.value) - parseInt(number2.value));
+//         output.innerText = minus
+// }
+
+// let output = document.getElementById("output");
+
+let customerList = [];
+
+// function btnAddCustomerOnAction(){
+//     let txtName = document.getElementById("txtName").value;
+//     let txtAddress = document.getElementById("txtAddress").value;
+//     let txtAge = document.getElementById("txtAge").value;
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtSalary = document.getElementById("txtSalary").value;
+
+//     let customer = {
+//         name:textName,
+//         address:txtAddress,
+//         age:txtAge,
+//         email:txtEmail,
+//         salary:txtSalary
+//     }
+//     customerList.push(customer);
+//     console.log(customerList);
+// }
+
+function loadTable(){
+    let tblCustomers = document.getElementById("tblCustomers");
+
+    tblCustomers.innerHTML+=`<tr>
+            <td>Saman</td>
+            <td>Walana</td>
+            <td>15</td>
+            <td>saman@email.com</td>
+            <td>750000</td>
+        </tr>`
+
+    console.log(tblCustomers);
+    
 }
 
-function mines(){
-    let number1 = document.getElementById("textInput1")
-    let number2 = document.getElementById("textInput2")
-    let minus = (parseInt(number1.value) - parseInt(number2.value));
-        output.innerText = minus
-}
-
-let output = document.getElementById("output");
 
